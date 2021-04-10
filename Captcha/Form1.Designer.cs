@@ -32,7 +32,6 @@ namespace Captcha
             this.RefreshButton = new System.Windows.Forms.Button();
             this.ContinueButton = new System.Windows.Forms.Button();
             this.CaptchaBackground = new System.Windows.Forms.PictureBox();
-            this.CaptchaText = new System.Windows.Forms.Label();
             this.CaptchaChecker = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.CaptchaBackground)).BeginInit();
             this.SuspendLayout();
@@ -67,18 +66,6 @@ namespace Captcha
             this.CaptchaBackground.TabIndex = 2;
             this.CaptchaBackground.TabStop = false;
             // 
-            // CaptchaText
-            // 
-            this.CaptchaText.AutoSize = true;
-            this.CaptchaText.Font = new System.Drawing.Font("Comic Sans MS", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.CaptchaText.Location = new System.Drawing.Point(16, 44);
-            this.CaptchaText.Name = "CaptchaText";
-            this.CaptchaText.Size = new System.Drawing.Size(206, 38);
-            this.CaptchaText.TabIndex = 3;
-            this.CaptchaText.Text = "This is captcha";
-            this.CaptchaText.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.CaptchaText.Visible = false;
-            // 
             // CaptchaChecker
             // 
             this.CaptchaChecker.Location = new System.Drawing.Point(12, 122);
@@ -95,10 +82,9 @@ namespace Captcha
             this.Controls.Add(this.CaptchaChecker);
             this.Controls.Add(this.ContinueButton);
             this.Controls.Add(this.RefreshButton);
-            this.Controls.Add(this.CaptchaText);
             this.Controls.Add(this.CaptchaBackground);
             this.Name = "CaptchaWindow";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Captcha";
             this.TopMost = true;
             ((System.ComponentModel.ISupportInitialize)(this.CaptchaBackground)).EndInit();
@@ -112,7 +98,6 @@ namespace Captcha
         private System.Windows.Forms.Button RefreshButton;
         private System.Windows.Forms.Button ContinueButton;
         private System.Windows.Forms.PictureBox CaptchaBackground;
-        private System.Windows.Forms.Label CaptchaText;
         private System.Windows.Forms.TextBox CaptchaChecker;
     }
 }
